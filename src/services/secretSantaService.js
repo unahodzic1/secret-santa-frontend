@@ -1,6 +1,6 @@
 import authService from './authService';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; 
+const API_BASE_URL = 'https://secret-santa-backend-2hvs.onrender.com/api';
 
 const getAuthHeaders = () => {
     const user = authService.getCurrentUser();
