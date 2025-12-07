@@ -48,10 +48,8 @@ function AdminPage() {
     }, [navigate]); 
 
     const handleGeneratePairs = async () => {
-        setMessage('Generisanje parova...');
         try {
             await secretSantaService.generatePairs();
-            setMessage('Parovi uspješno generisani!');
             fetchEmployees(); 
             fetchHistory(); 
         } catch (error) {

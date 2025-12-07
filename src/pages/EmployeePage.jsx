@@ -47,6 +47,15 @@ function EmployeePage() {
     };
 
     return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column', 
+            alignItems: 'center',    
+            minHeight: '100vh',
+            paddingTop: '50px',      
+            width: '100%',
+            boxSizing: 'border-box'
+        }}>
         <div>
             <h1>Dashboard Uposlenika</h1>
             <button onClick={handleLogout}>Odjavi se</button>
@@ -64,6 +73,7 @@ function EmployeePage() {
             ) : (
                 <p>Nijedna Secret Santa lista još nije generisana.</p>
             )}
+        </div>
         </div>
     );
 }
