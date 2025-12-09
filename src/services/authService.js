@@ -5,6 +5,7 @@ const getCurrentUser = () => {
     return user ? JSON.parse(user) : null;
 };
 
+// POST /api/Auth/register
 const register = async (firstName, lastName, email, password, role) => {
     const dataToSend = { 
         firstName, 
@@ -27,6 +28,7 @@ const register = async (firstName, lastName, email, password, role) => {
     return true; 
 };
 
+// POST /api/Auth/login
 const login = async (email, password) => {
     const response = await fetch(`${API_BASE_URL}/Auth/login`, {
         method: 'POST',

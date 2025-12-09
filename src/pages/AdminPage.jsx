@@ -17,7 +17,7 @@ function AdminPage() {
             const data = await secretSantaService.getEmployees();
             setEmployees(data);
         } catch (error) {
-            setMessage(`Greška pri dohvatu uposlenika: ${error.message}`);
+            setMessage('Greška: ${error.message}');
         }
     };
 
@@ -26,7 +26,7 @@ function AdminPage() {
             const data = await secretSantaService.getHistory();
             setHistory(data);
         } catch (error) {
-            setMessage(`Greška pri dohvatu historije parova: ${error.message}`);
+            setMessage('Greška: ${error.message}');
         } finally {
             setLoading(false);
         }
@@ -53,7 +53,7 @@ function AdminPage() {
             fetchEmployees(); 
             fetchHistory(); 
         } catch (error) {
-            setMessage(`Greška pri generisanju: ${error.message}`);
+            setMessage('Greška pri generisanju: ${error.message}');
         }
     };
 

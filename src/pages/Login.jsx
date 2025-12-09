@@ -44,7 +44,7 @@ function LoginPage() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="password" style={{ display: 'block', marginBottom: '5px' }}>Lozinka:</label>
+                    <label htmlFor="password" style={{ display: 'block', marginBottom: '5px' }}>Password:</label>
                     <input 
                         type="password" 
                         id="password" 

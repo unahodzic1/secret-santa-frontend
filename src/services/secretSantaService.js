@@ -10,7 +10,7 @@ const getAuthHeaders = () => {
             'Authorization': `Bearer ${user.token}` 
         };
     } else {
-        throw new Error("Korisnik nije ulogovan. Neovlašten pristup.");
+        throw new Error("Korisnik nije ulogovan.");
     }
 };
 
